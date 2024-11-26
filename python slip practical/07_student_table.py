@@ -15,7 +15,8 @@ cursor.execute('''
     );
 ''')
 
-cursor.execute("""insert into students(roll_no,name) values(1,'om'),(2,'tanvi'),(3,'sahisha');""")
+cursor.execute("""insert into students(roll_no,name) values(1,'om'),(2,'rahul'),(10,'raj');""")
+cursor.execute("""update students set name = 's' where roll_no = 10;""")
 cursor.execute("select * from students;")
 cursor.close()
 conn.close()
